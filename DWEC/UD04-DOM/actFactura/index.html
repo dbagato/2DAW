@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Actividad Facturas</title>
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="facturas.css" title="style">
+    </head>
+    <body >
+        <h1>Introduccion Facturas</h1>
+        <div>
+            Producto:<input id="producto" type="text"></input>
+            Cantidad:<input id="cantidad" type="number"></input>
+            Precio Unitario:<input id="precio" type="number"></input>
+        <button onclick="anadoFila()">Anyadir</button>
+        </div>
+
+       <table>
+            <thead>
+                <tr>
+                  <th>Producto</th><th>Cantidad</th><th>Precio Unitario</th><th>Precio Total</th><th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo">
+
+
+            </tbody>
+            <tfoot>
+                <tr><th>Base Imponible:</th><th><span id="base"></span></th></tr>
+                <tr><th>IVA:</th><th><span id="iva"></span></th></tr>
+                <tr><th>Total Factura:</th><th><span id="total"></span></th></tr>
+            </tfoot>
+
+
+        </table>
+        
+</body>
+</html>

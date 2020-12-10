@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<body>
+    <h1>Uniudad 1 Ejercicios</h1>
+</br>
+    <h2>Actividad 5.</h2>
+</br>
+   <script>
+       /*generaremos un pequeño script en el que preguntaremos al usuario cuna cifra multiplo de 5 
+       y lo cambiaremos por billetes con la menor cantidad de los mismos 
+       y sacaremos por pantalla las imagenes del cambio .
+       */
+      //crearemos un array para almacenar los multimplos de 5 correspondientes con los billetes
+        var billetes = [500,200,100,50,20,10,5];
+        //el numero que introducira el usuario
+        var numeroUsuario;
+        //contador que almacenara cuantas veces se repite un multiplo para la impresion de billetes
+        var contador=0;
+        //array con todas las imagenes guardadas.
+        var img= ["<img src='img/EUR_500.jpg'width='100px'>",
+       "<img src='img/EUR_200.jpg'width='100px'>",
+       "<img src='img/EUR_100.jpg'width='100px'>",
+       "<img src='img/EUR_50.jpg'width='100px'>",
+       "<img src='img/EUR_20.jpg'width='100px'>",
+       "<img src='img/EUR_10.jpg'width='100px'>",
+       "<img src='img/EUR_5.jpg'width='100px'>"];
+        //Iniciaremos preguntando al usuario por un promt cual es el numero a cambiar.
+                numeroUsuario=prompt("Introduzca un numero multiplo de 5");
+                
+                console.log(numeroUsuario);
+                /*el promt al devolver un string lo transformaremos con un parseint 
+                y lo guardaremos en una variable llamada como el numero guardado del usuario
+                pero añadiendo int delante para asi saber que este es un int*/
+                var numeroUsuario_int = parseInt(numeroUsuario);
+                //comprobaremos si es multiplo de 5 si no saltara un error de que el nuemro indicado no es correcto
+                if (numeroUsuario_int%5==0) {
+                    /*para comprobar el numero recorreremos el array de los billetes que guarda el valor de los mismos*/
+                    for (let i = 0; i < billetes.length; i++) {
+                        /*con un while restaremos el valor al numero indicado por el usuario hasata que este
+                         sea menos el mismo y añadiremos +1 al contador*/
+                     while (numeroUsuario_int>=billetes[i]) {
+                         numeroUsuario_int-=billetes[i];
+                         contador++;
+                     }   
+                     /*con un if comprobaremos si el contador es mayor a 0 ya que si es menor quiere decir que no habra nungun billete del mismo;*/
+                       if (contador>0) {
+                           for (let j = 0; j < contador; j++) {
+                            document.write(img[i]);
+                           }
+                          
+                       }
+                        contador=0;
+                    }
+                    
+
+
+                } else {
+                    console.error("El numero introducido no es multiplo de 5");
+                }
+        
+        
+
+       
+   </script>
+    
+    
+</body>
