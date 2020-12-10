@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Titulo</title>
+		<!--Esto es la cabezera del documento-->
+		<meta charset="utf -8"/>
+	</head>
+
+	<body>
+		<h1>Rellena tu CV</h1>
+		<form action="" method="post">
+				Nombre:
+					<br/>
+				<input type="text" name="nombre" value="" />
+					<br/>
+				Apellidos:
+					<br/>
+				<input type="text" name="apellidos" value="" size="50"/>
+					<br/>
+				Contraseña:
+					<br/>
+				<input type="password" name="contraseña" value=""/>
+					<br/>
+				DNI
+					<br/>
+				<input type="text" name="DNI" value="" size="10" maxlength="9">
+					<br/>
+				Sexo 
+					<br/>
+					Chekbox cuadrados:
+					<br/>
+				<input type="checkbox" name="lenguaje" value="html">HTML
+					<br/>
+				<input type="checkbox" name="lenguaje" value="javascript">Javascript
+					<br/>
+				<input type="checkbox" name="lenguaje" value="css">CSS
+					<br/>
+				<input type="checkbox" name="lenguaje" value="xml">XML
+					<br/>
+					Chekbox circulos de una sola seleccion:
+					<br/>
+				<input type="radio" name="sexo" value="hombre" />Hombre 
+					<br/>
+				<input type="radio" name="sexo" value="hombre" />Mujer
+					<br/>
+				<input type="radio" name="sexo" value="helicoptero de combate"/>Helicoptero de combate
+					<br/>
+				<input type="radio" name="sexo" value="otros" checked="checked"/>Otros
+					<br/>
+					lista desplegable simple:
+					<br/>
+				<select>
+				  <option>Atletico de Madrid</option>
+				  <option selected="selected">Betis</option>
+				  <option>FC. Barcelona</option>
+				  <option>Real Madrid</option>
+ 				  <option>Zaragoza</option>
+				</select>
+				<br/>
+				lista desplegable de varios elementos:
+				<br/>
+				<select name="ciudad">
+ 					<optgroup label="Europa">
+				    	<option>Madrid</option>
+    					<option>Londres</option>
+    					<option>Paris</option>
+  					</optgroup>
+					<optgroup label="Suramerica">
+			    		<option>Santiago</option>
+    					<option>Sao Paulo</option>
+    					<option>Lima</option>
+   						<option>Bogota</option>
+					</optgroup>
+				    <optgroup label="Africa">
+					    <option>Casablanca</option>
+					    <option>Ciudad del Cabo</option>
+					</optgroup>
+				</select>
+				<br/>
+				Incluir mi foto:
+				<input type="file" name="foto"/>
+					<br/>
+				<input type="checkbox" name="checkbox">Suscribirme al boletin de novedades
+					<br/>
+				<input type="submit" name="guardar cambios" value="Guardar Cambios">
+				<input type="reset" name="resetear" value="Borrar los datos introducidos">
+		</form>
+				
+	</body>
+</html>

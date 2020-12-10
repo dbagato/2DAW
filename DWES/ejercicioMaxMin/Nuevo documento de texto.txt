@@ -1,0 +1,9 @@
+1formulario 3 numeros action nombre 2 archivo
+2 php calcula max y min de los numeros
+
+ejerccios 1:
+	formulario en el que se introducen 2 numeros y con lista desplegable se elije la operaion a realizar, este formulario llama a un segundo arhivo php que realiza la operacion selecionada con los dos numeros y muestra resultado.
+ejericio 2: 
+	repetir ejercicis anteriores uniendo en un archivo fomulario y php de los datos
+	isset($_POST['NombreVariable']);
+
