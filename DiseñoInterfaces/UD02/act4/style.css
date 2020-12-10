@@ -1,0 +1,9 @@
+p::first-letter { 
+	text-transform: uppercase;
+	font-size:3em;
+	font-family:serif; 
+}
+p::before   { content: "©"; }
+p{
+font-size:2.5vh;
+}

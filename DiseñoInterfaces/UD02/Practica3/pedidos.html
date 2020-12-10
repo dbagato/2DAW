@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suleyman's Dürüm Food Truck</title>
+	<meta charset="utf-8">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	 <div class="pagina">
+	<center>
+	<header>
+		<h1 align="center">Suleyman's Dürüm Food Truck</h1>
+		<h2 align="center">El Döner Kebab más enrollado</h2>
+		<img src="img/durum.jpg"> 
+	</header>
+	<nav>
+		<ul type="none">
+			<li><a href="index.html" >Inicio</a></li>
+			<li><a href="pedidos.html" >Pedido</a></li>
+			<li><a href="contacto.html" >Contacto</a></li>
+		</ul>
+		
+
+	</nav>
+
+<article>
+	<section>
+	<form action="mailto:pedidos@foofoods.com" method="post">
+					<br/>
+				<label name="Nombre">Nombre cliente:
+					<br/>
+				<input autocomplete="on" type="text" name="nombre" placeholder="Indiqu su nombre" minlength="5" maxlength="40" required="" pattern="[A-Za-z ?]+" />
+				</label>
+					<br/>
+				<label name="telefono">Telefono de contacto:
+					<br/>
+				<input autocomplete="on" type="text" name="telefono" placeholder="nº de telefono" min="100000000" max="999999999" required="" pattern="[0-9]*" />
+				</label>
+					<br/>
+				<label name="email">Email de contacto:
+					<br/>
+				<input autocomplete="on" type="email" name="email" placeholder="Escriba su correo:" required="" />
+				</label>
+				</br>
+				<img src="img/Durum_Pollo.png" width="200" height="150">
+					<br/>
+				Nº De dürums pollo: 	
+				<select name="pollo">
+				  <option selected="selected">0</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+ 				  <option>4</option>
+ 				  <option>5</option>
+				  <option>6</option>
+				  <option>7</option>
+ 				  <option>8</option>
+ 				  <option>9</option>
+ 				  <option>10</option>
+				</select>
+				</br>
+				<img src="img/Durum_Ternera.png" width="200" height="150">
+				</br>
+				Nº De dürums ternera: 	
+				<select name="ternera">
+				  <option selected="selected">0</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+ 				  <option>4</option>
+ 				  <option>5</option>
+				  <option>6</option>
+				  <option>7</option>
+ 				  <option>8</option>
+ 				  <option>9</option>
+ 				  <option>10</option>
+				</select>
+				</br>
+				<img src="img/Durum_Mixto.png" width="200" height="150">
+				</br>
+				Nº De dürums Mixto: 	
+				<select name="Mixto">
+				  <option selected="selected">0</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+ 				  <option>4</option>
+ 				  <option>5</option>
+				  <option>6</option>
+				  <option>7</option>
+ 				  <option>8</option>
+ 				  <option>9</option>
+ 				  <option>10</option>
+				</select>
+				</br>
+				<img src="img/Durum_Vegetariano.png" width="200" height="150">
+				</br>
+				Nº De dürums vegetarano: 	
+				<select name="vegetarano">
+				  <option selected="selected">0</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+ 				  <option>4</option>
+ 				  <option>5</option>
+				  <option>6</option>
+				  <option>7</option>
+ 				  <option>8</option>
+ 				  <option>9</option>
+ 				  <option>10</option>
+				</select>	
+					<br/>
+				<label name="range">
+				Nivel de picante:
+					<br/>
+				<input type="range" min="0" max="10">
+				</label>		
+					<br/>	
+				<label name="textarea">	
+				Notacion que devamos saber de su pedido:
+					<br/>	
+				<textarea name="comentario" rows="2" cols="20"placeholder="alergias,tronas,..." ></textarea>	
+				</label>
+					<br/>
+				<label name="metodoPago" required="">
+				Tipo de pago: 
+					<br/>
+				<input type="radio" name="pago"  />Efectivo 
+					<br/>
+				<input type="radio" name="pago" />Tarjeta
+					<br/>
+				</label>
+					<br/>
+				<label name="envuelto">
+				¿Desea el bocadillo envuelto?(en el caso de no estar macada se sirve en plato)
+					<br/>
+				<input type="checkbox" name="envuelto" checked>Envuelto
+					<br/>
+				</label>	
+				<input type="submit" name="">
+				<input type="reset" name="resetear" value="Borrar los datos introducidos">
+		</form>
+	</section>			
+</article>
+<footer>		
+		
+        <p>Diego Bagato &#169; 2020</p>
+	</footer>  
+</center>  
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+font-family: sans-serif;
+font-size: 2vh;
+}
+#DWEC p:before {
+	content: "APAGADO";
+	color: #c1877a;
+}
+#DWEC p:hover:before {
+	content: "ENCENDER";
+	color: #f4d742;
+	transition: color 0.1s linear 0.1s;
+}
+td#DWEC :hover{
+content :"Desarrollo Web Entorno Cliente,DWEC,<a href='jesus.bautista@iesconselleria.es'>JESUS BAUTISTA QUEROL</a>";
+}
+td#DWEC :hover{
+content :"Desarrollo Web Entorno Cliente,DWEC,<a href='jesus.bautista@iesconselleria.es'>JESUS BAUTISTA QUEROL</a>";
+}
+
+
+td{
+	border:solid black 1px;
+}

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<body>
+    <h1>Uniudad 1 Ejercicios</h1>
+</br>
+    <h2>Actividad 3.</h2>
+</br>
+   <script>
+       /*generaremos un pequeño script generado uhn numero con math.random() 
+       y preguntaremos al usuario mediante un promt() 
+       un numero e indicaremos si este es mayor o menor al generado por el programa
+       */
+      document.write("generaremos un numero aleatorio con Math.random() entre el 0 y el 100");
+        var numeroRandom;
+        var numeroUsuario;
+        var intentos=0;
+        numeroRandom=Math.floor(Math.random() * 101);
+        
+        do {
+            numeroUsuario=prompt("Introduzca un numero entre el 0 y el 100" + "<br>");
+            var numeroUsuario_int = parseInt(numeroUsuario);
+            if (numeroUsuario<=100&&numeroUsuario>=0) {
+                 if (numeroRandom<numeroUsuario_int) {
+                 console.log("El numero introducido es mayor que el generado");
+                 }else if(numeroRandom>numeroUsuario_int){
+                 console.log("El numero introducido es menor que el generado");
+                 }else if (numeroRandom==numeroUsuario_int) {
+                 console.log("El numero introducido es igual que el generado");
+                 }
+            }
+        console.error("El numero introducido es mayor a 100 o menor a 0");
+        intentos++;
+        } while (numeroRandom!=numeroUsuario_int);
+        document.write("Has usado "+ intentos + " numero de intentos.")
+
+       
+   </script>
+    
+    
+</body>
