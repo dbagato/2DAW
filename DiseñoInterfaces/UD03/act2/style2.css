@@ -1,0 +1,19 @@
+div{
+    padding: 0.5%;
+}
+#top {
+    background-color: green;
+    }
+#nav{
+    background-color: red;
+    height: auto;
+    }
+#cabecera{
+    background-color: magenta;
+    }
+#articulo{
+    background-color: orange;
+}
+#caja{
+    background-color: blue;
+}         

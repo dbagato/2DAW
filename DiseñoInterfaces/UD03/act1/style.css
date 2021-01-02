@@ -1,15 +1,9 @@
 #top{
 background-color: red;
 }
-#nav{
-background-color: green;
-}
-#caja{
+#izquierda{
 background-color: blue;
 }
-#cabecera{
-    background-color: blue;
-    }
-#articulo{
-     background-color: blue;
-     }
+#derecha{
+background-color: green;
+}
