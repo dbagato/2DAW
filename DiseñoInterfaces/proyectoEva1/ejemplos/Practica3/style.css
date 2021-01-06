@@ -1,0 +1,75 @@
+body{
+	font-family: sans-serif;
+	background-image: url("img/fondo2.jpg");
+	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-size: 100% 100%;
+}
+li{
+  display: inline;
+}
+nav>ul{
+	background-color: red; 
+}
+ul li:hover a {
+    background: brown;
+}
+ul li:active a {
+    background: white;
+}
+.productos{
+	height: 200px;
+	width: 250px;
+	float: left;
+	border: black 1px solid;
+}
+.productos>span{
+	height: 150px;
+	width: 150px;
+	display: none;
+}
+.productos:hover >span{
+	height: 150px;
+	width: 150px;
+	display: block;
+}
+.productos>img{
+	height: 150px;
+	width: 150px;
+	z-index: 10;
+	display: block;
+}
+.productos:hover img{
+	height: 150px;
+	width: 150px;
+	z-index: 10;
+	display: none;
+}
+.pagina{
+	padding-left:10% ; 
+	padding-right: 10%;
+}
+footer{
+	clear:left;
+}
+#numero{
+	width: 100%;
+	height: 50px;
+	border: black 1px solid;
+}
+#ubicacion{
+	width: 100%;
+	height: 50px;
+	border: black 1px solid;
+}
+#numero>p:after{
+	content:url("img/call.png"); 
+	height: 50px;
+	width:50px;
+}
+#ubicacion>a:after{
+	content:url("img/ubi.png"); 
+	height: 50px;
+	width:50px;
+}

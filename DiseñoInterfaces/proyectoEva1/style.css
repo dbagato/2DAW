@@ -1,0 +1,21 @@
+.carousel-caption{
+    background-color:rgba(27, 27, 27, 0.63);
+}
+.carousel-item>img{
+    width: 84vw;
+    height: auto;
+}
+.navbar-nav>a>img{
+    width: 30px;
+    height: 30px;
+}
+#imagenPersonal{
+    display:flex;
+    margin:0 auto;
+    width: auto;
+    height: 70vh;
+}
+#Footer{
+    color:white;
+    background-color: black;
+}
